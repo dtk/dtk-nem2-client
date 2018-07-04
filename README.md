@@ -1,10 +1,11 @@
-DTK NEM2 Client
+Dtk Nem2 Client
 ==============================
 
 
 #### Description
 
-DTK NEM2 Client is a NodeJS based library for communication between Dtk Client and NEM2 blockchain.
+Dtk Nem2 Client is a NodeJS based library for communication between Dtk Client and Nem2 blockchain.
+It's using nem2-sdk to communicate with the blockchain.
 
 ## Development
 
