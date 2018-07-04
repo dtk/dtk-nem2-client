@@ -9,13 +9,8 @@ const namespaceHttp = new NamespaceHttp(url);
 
 const mosaicService = new MosaicService(accountHttp, mosaicHttp, namespaceHttp);
 
-// Replace with address
-const address = "SD5DT3-CH4BLA-BL5HIM-EKP2TA-PUKF4N-Y3L5HR-IR54";
-
 export let checkBalance = (req: Request, res: Response) => {
-  // var id = req.params.id;
-  // "SD5DT3-CH4BLA-BL5HIM-EKP2TA-PUKF4N-Y3L5HR-IR54";
-  var address = "SD5DT3-CH4BLA-BL5HIM-EKP2TA-PUKF4N-Y3L5HR-IR54";
+  var address = req.body.address;
   var test = mosaicService.mosaicsAmountViewFromAddress(Address.createFromRawAddress(address))
     .flatMap((_: any) => _)
     .subscribe(
