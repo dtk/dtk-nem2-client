@@ -3,6 +3,7 @@ import * as express from 'express';
 import * as dotenv from "dotenv";
 
 import * as accountController from "./controllers/account";
+import * as transactionController from "./controllers/transaction";
 
 dotenv.config({ path: ".env" });
 
@@ -19,5 +20,9 @@ app.get("/account/create", accountController.create);
 app.get("/account/info/:address?", accountController.info);
 app.get("/account/list_transactions/:public_key?", accountController.listTransactions);
 app.get("/account/open", accountController.open);
+
+app.get("/transaction/info/:hash", transactionController.info);
+app.post("/transaction/transfer", transactionController.transfer);
+app.post("/transaction/pullfunds", transactionController.pullfunds);
 
 module.exports = app;

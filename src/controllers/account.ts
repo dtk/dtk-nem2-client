@@ -17,7 +17,6 @@ const url = process.env.BLOCKCHAIN_APP_URL;
 const accountHttp = new AccountHttp(url);
 const mosaicHttp = new MosaicHttp(url);
 const namespaceHttp = new NamespaceHttp(url);
-
 const mosaicService = new MosaicService(accountHttp, mosaicHttp, namespaceHttp);
 
 export let checkBalance = (req: Request, res: Response) => {
