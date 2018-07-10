@@ -10,10 +10,10 @@ It's using nem2-sdk to communicate with the blockchain.
 ### Development
 
 In top level directory create .env file based on .env.template
-##### required
+##### required .env variables
 BLOCKCHAIN_APP_URL = 'http://localhost:3000' # this is the endpoint of catapult blockchain application that Dtk Nem2 Client will comunicate with
 
-##### optional
+##### optional .env variables
 NEM2_ACCOUNT_ADDRESS =        # address for default nem2 account you want to use
 
 NEM2_ACCOUNT_PRIVATE_KEY =    # private key for default nem2 account you want to use - you will not be able to execute transactions without this variable
@@ -21,6 +21,7 @@ NEM2_ACCOUNT_PRIVATE_KEY =    # private key for default nem2 account you want to
 NEM2_ACCOUNT_PUBLIC_KEY =     # public key for default nem2 account you want to use
 
 NEM2_CLIENT_PORT =            # port on which Dtk Nem2 Client will be running and Dtk Client will connect to (if not set, default is 3003)
+
 
 
 
