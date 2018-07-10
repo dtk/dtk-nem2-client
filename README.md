@@ -29,6 +29,6 @@ In top level directory create .env file based on .env.template
 
 ##### Build and start the application
 
-```npm install ``` # install dependencies
-```tsc``` # to build dist directory content
-```node dist/server.js``` # to run the application on localhost and port NEM2_CLIENT_PORT
+* ```npm install ``` # install dependencies
+* ```tsc``` # to build dist directory content
+* ```node dist/server.js``` # to run the application on localhost and port NEM2_CLIENT_PORT
