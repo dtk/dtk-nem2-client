@@ -9,8 +9,7 @@ dotenv.config({ path: ".env" });
 
 const app = express();
 
-// app.set("port", process.env.PORT || 3000);
-app.set("port", 3003);
+app.set("port", process.env.NEM2_CLIENT_PORT || 3003);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -23,6 +22,5 @@ app.get("/account/open", accountController.open);
 
 app.get("/transaction/info/:hash", transactionController.info);
 app.post("/transaction/transfer", transactionController.transfer);
-app.post("/transaction/pullfunds", transactionController.pullfunds);
 
 module.exports = app;
