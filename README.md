@@ -7,8 +7,10 @@ Dtk Nem2 Client
 Dtk Nem2 Client is a NodeJS based library for communication between Dtk Client and Nem2 blockchain.
 It's using nem2-sdk to communicate with the blockchain.
 
-### Development
 #
+### Development
+
+
 #### Setup
 
 In top level directory create .env file based on .env.template
@@ -26,7 +28,8 @@ In top level directory create .env file based on .env.template
 * NEM2_CLIENT_PORT =            # port on which Dtk Nem2 Client will be running and Dtk Client will connect to (if not set, default is 3003)
 
 
-#
+
+
 #### Build and start the application
 
 * ```npm install ``` # install dependencies
