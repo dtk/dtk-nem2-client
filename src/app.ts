@@ -22,5 +22,6 @@ app.get("/account/open", accountController.open);
 
 app.get("/transaction/info/:hash", transactionController.info);
 app.post("/transaction/transfer", transactionController.transfer);
+app.post("/transaction/namespace", transactionController.namespace);
 
 module.exports = app;
